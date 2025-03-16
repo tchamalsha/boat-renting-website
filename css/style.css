@@ -945,15 +945,17 @@ textarea.form-control {
 }
 
 .btn.btn-primary {
-  color: #fff;
+  color: #ffffff;
   border-width: 2px;
-  background: #c9ac88;
+  border-color: #ff8c00;
+  background: #ff8c00;
   border-radius: 25px;
 }
 
 .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
-  border-color: #c9ac88;
-  background: #c9ac88;
+  border-color: #eac190;
+  background: #eac190;
+  color: #000;
 }
 
 .btn.btn-sm {
@@ -1954,6 +1956,124 @@ textarea.form-control {
   -webkit-animation: loader-dash 1.5s ease-in-out infinite;
   animation: loader-dash 1.5s ease-in-out infinite;
   stroke-linecap: round;
+}
+
+.pricing-section {
+  padding: 50px 20px;
+}
+
+h2 {
+  color: #003366;
+  margin-bottom: 30px;
+}
+
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.pricing-card {
+  width: 320px;
+  padding: 20px;
+  border-radius: 15px;
+  background: linear-gradient(145deg, #941818, #173667);
+  box-shadow: 8px 8px 16px #b0b8c4, -8px -8px 16px #ffffff;
+  transition: transform 0.3s ease-in-out;
+}
+
+.pricing-card:hover {
+  transform: translateY(-5px);
+}
+
+.pricing-card h3 {
+  color: #003366;
+  margin-bottom: 15px;
+}
+
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.pricing-card ul li {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.peak {
+  background: linear-gradient(145deg, #ff5733, #ff7b5f);
+  box-shadow: 6px 6px 14px #cc3f1d, -6px -6px 14px #ff9d82;
+  color: white;
+}
+
+.off-peak {
+  background: linear-gradient(145deg, #0077b6, #00a8e8);
+  box-shadow: 6px 6px 14px #00588a, -6px -6px 14px #00c4ff;
+  color: white;
+}
+
+
+
+.pricing-section {
+  padding: 50px 20px;
+}
+
+h2 {
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.pricing-card {
+  padding: 20px;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.1), -6px -6px 12px rgba(255, 255, 255, 0.8);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.pricing-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15), -10px -10px 20px rgba(255, 255, 255, 0.9);
+}
+
+.pricing-card h3 {
+  color: #1a4b6f;
+  margin-bottom: 15px;
+}
+
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.pricing-card ul li {
+  background: rgba(240, 248, 255, 0.6);
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.peak {
+  background: #7eacda;
+  border: 2px solid #c5d8e6;
+}
+
+.off-peak {
+  background: #f9fbfd;
+  border: 2px solid #a3c2d6;
 }
 
 @-webkit-keyframes loader-rotate {
