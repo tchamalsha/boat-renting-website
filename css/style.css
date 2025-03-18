@@ -876,11 +876,12 @@ header .navbar.navbar-light .nav-link.active {
 }
 
 .section-cover p {
-  color: #fff;
+  color: #000000;
+  
 }
 
 .section-cover h2 {
-  color: #fff;
+  color: #000000;
   font-size: 50px;
 }
 
@@ -2075,6 +2076,62 @@ h2 {
   background: #f9fbfd;
   border: 2px solid #a3c2d6;
 }
+.customer-reviews {
+  text-align: center;
+  padding: 50px 20px;
+  /* background-color: #ffffff; */
+}
+
+.customer-reviews h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.reviews-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 20px;
+  padding: 20px;
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+  -ms-overflow-style: none; /* Hide scrollbar for IE/Edge */
+}
+
+.reviews-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari */
+}
+
+.review {
+  flex: 0 0 auto;
+  
+  min-height: 150px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  word-wrap: break-word;  /* Ensures long words break */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.review p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 10px;
+  line-height: 1.4;
+  word-wrap: break-word; /* Ensures text doesn't overflow */
+}
+
+.review h4 {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: #333;
+}
+
 
 @-webkit-keyframes loader-rotate {
   100% {
